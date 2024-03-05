@@ -9,4 +9,9 @@ echo "difference " . $interval->y . " years, " . $interval->m." months, ".$inter
 
 // shows the total amount of days (not divided into years, months and days like above)
 echo "difference " . $interval->days . " days ";
+
+// create new date with number of days
+
+$Date = "2024-03-05";
+echo date('Y-m-d', strtotime($Date. ' + 30 days'));
 ?>
